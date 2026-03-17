@@ -1,0 +1,22 @@
+/* Reset + Variables */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #4e54c8;
+  --secondary: #8f94fb;
+  --dark: #0f172a;
+  --light: #ffffff;
+
+  --radius: 10px;
+}
+
+/* Typography */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--dark);
+  color: var(--light);
+}
