@@ -8,8 +8,8 @@
 }
 
 .btn-primary {
-  background: var(--primary);
-  color: white;
+  background: var(--btn-primary-background);
+  color: var(--btn-primary-color);
 }
 
 .btn-primary:hover {
