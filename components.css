@@ -23,6 +23,7 @@
   border-radius: var(--radius);
   backdrop-filter: blur(10px);
 }
+/* footer */
 .main-footer {
     background: var(--bg-card);
     border-top: 1px solid var(--border);
