@@ -18,7 +18,7 @@
 
 /* Cards */
 .card {
-  background: rgba(255,255,255,0.05);
+  background: var(--card-primary);
   padding: 20px;
   border-radius: var(--radius);
   backdrop-filter: blur(10px);
