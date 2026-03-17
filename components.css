@@ -23,3 +23,115 @@
   border-radius: var(--radius);
   backdrop-filter: blur(10px);
 }
+.main-footer {
+    background: var(--bg-card);
+    border-top: 1px solid var(--border);
+    padding: 3rem 0;
+    margin-top: 4rem;
+}
+
+.footer-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.footer-text {
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    line-height: 1.6;
+}
+
+.footer-copyright {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.footer-divider {
+    color: var(--text-muted);
+    margin: 0 0.3rem;
+}
+
+.footer-built {
+    color: var(--text-primary);
+}
+
+.footer-author {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.footer-by-text {
+    color: var(--text-muted);
+}
+
+.footer-author-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 700;
+    transition: all var(--transition-fast);
+    padding: 0.2rem 0.5rem;
+    border-radius: 6px;
+}
+
+.footer-author-link:hover {
+    color: var(--cyan);
+    background: rgba(192,132,252,0.1);
+    transform: translateY(-2px);
+}
+
+.footer-author-link i {
+    font-size: 0.85rem;
+}
+
+.footer-social {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-social-link {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-darker);
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: all var(--transition);
+}
+
+.footer-social-link {
+    transition: all var(--transition-fast);
+}
+
+.footer-social-link:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: white;
+    transform: translateY(-2px);
+}
