@@ -8,14 +8,32 @@
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Components -->
         <link rel="stylesheet" href="base.css">
         <link rel="stylesheet" href="components.css">
         <link rel="stylesheet" href="animations.css">
 
+        
+        
     </head>
     <body>
-    <!-- Footer -->
-     <footer id="content-left-social-right"></footer>
-    <script src="components.js"></script>
+        <div class="page-wrapper">
+            <header id="app-header"></header>
+            <main class="main-content">
+                <!-- <div id="cards"></div> -->
+            </main>
+            <footer id="content-left-social-right"></footer>
+        </div>
+        <script type="module">
+            import { loadUIConfig } from "./ui.js";
+            import { loadHeader, loadCards, loadFooter } from "./components.js";
+            const configUrl  = "./ui-config.json";
+            const UI_CONFIG = await loadUIConfig(configUrl);
+            loadHeader("app-header",UI_CONFIG);
+            loadCards("cards",UI_CONFIG);
+            loadFooter("content-left-social-right",UI_CONFIG);
+        </script>
     </body>
 </html>

@@ -1,0 +1,56 @@
+{
+  "footer": {
+    "year": 2026,
+    "projectName": "Developer Portfolio",
+    "tagline": "Built with passion and code",
+    "divider": "•",
+    "author": {
+      "name": "Put It Digital",
+      "link": "https://putitdigital.co.za/"
+    },
+    "socials": [
+      {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/sithembiso-sangweni-07b935113",
+        "icon": "fab fa-linkedin-in"
+      },
+      {
+        "name": "GitHub",
+        "url": "https://github.com/putitdigital",
+        "icon": "fab fa-github"
+      }
+    ]
+  },
+
+  "header": {
+    "logo": "LOGO",
+    "toggleNav": {
+      "name": "Menu",
+      "icon": "fas fa-bars"
+    },
+    "links": [
+      { "name": "Home", "url": "/" },
+      { "name": "About", "url": "/about" },
+      { "name": "Projects", "url": "/projects" },
+      { "name": "Services", "url": "/Services" },
+      { "name": "Contact", "url": "/contact" }
+    ]
+  },
+
+  "cards": {
+    "projects": [
+      {
+        "title": "Portfolio Website",
+        "description": "Personal developer portfolio",
+        "image": "/images/portfolio.png",
+        "link": "#"
+      },
+      {
+        "title": "Chat App",
+        "description": "Realtime chat system",
+        "image": "/images/chat.png",
+        "link": "#"
+      }
+    ]
+  }
+}
