@@ -6,9 +6,11 @@
         <title>DEV-UI-KIT</title>
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
         <!-- Components -->
         <link rel="stylesheet" href="base.css">
-       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/putitdigital/dev-ui-kit@d5a15b7643a6ae14a8c44ab777c450327de3d097/components.css">
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/putitdigital/dev-ui-kit@7ad71e5c6876357dbf4caf911b98e6443dc71968/components.css">
 
     </head>
     <body>
@@ -21,6 +23,14 @@
         </div>
         
     <!--Components -->
-    <script src="https://cdn.jsdelivr.net/gh/putitdigital/dev-ui-kit@main/components.js"></script>
+    <script type="module">
+        import { loadUIConfig } from "https://cdn.jsdelivr.net/gh/putitdigital/dev-ui-kit@main/ui.js";
+        import { loadHeader, loadCards, loadFooter } from " https://cdn.jsdelivr.net/gh/putitdigital/dev-ui-kit@7ad71e5c6876357dbf4caf911b98e6443dc71968/components.js";
+        const configUrl = "./ui-config.json";
+        const UI_CONFIG = await loadUIConfig(configUrl);
+        loadHeader("app-header",UI_CONFIG);
+        loadCards("cards",UI_CONFIG);
+        loadFooter("app-footer",UI_CONFIG);
+    </script>
     </body>
 </html>
